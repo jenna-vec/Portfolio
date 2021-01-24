@@ -15,230 +15,113 @@ a {
 }
 
 .grid {
-  margin-bottom: 20px;
   position: fixed;
   z-index: 1;
-  width: 100%;
-  background-image: url('img/background.svg');
+  height: 100%;
+  background-image: url(img/background.svg);
   background-size: cover;
+  transform: translateX(-327px) rotate(90deg);
 }
 
 .blue-noodle {
   width: 7%;
   z-index: 2;
   position: fixed;
-  margin-top: 25px;
-  margin-left: 25px;
+  margin-top: 5%;
+  margin-left: 5%;
 }
 
 .pills {
-  width: 33%;
+  width: 32%;
   z-index: 3;
   position: fixed;
-  margin-top: 5px;
-  margin-left: 9px;
+  margin-top: 1%;
+  margin-left: 1%;
 }
 
 .blue-button {
   z-index: 4;
-  width: 6%;
+  width: 5%;
   position: fixed;
-  margin-top: 42px;
-  margin-left: 140px;
+  margin-top: 46%;
+  margin-left: 4%;
 }
 
 .green-circle {
   z-index: 5;
   width: 9%;
   position: fixed;
-  margin-top: 340px;
-  margin-left: 140px;
+  margin-top: 35%;
+  margin-left: 15%;
 }
 
 .pink-cone {
   z-index: 6;
-  width: 6%;
+  width: 5%;
   position: fixed;
-  margin-top: 440px;
-  margin-left: 300px;
+  margin-top: 46%;
+  margin-left: 29%;
 }
 
 .green-button {
   z-index: 7;
   width: 5%;
   position: fixed;
-  margin-top: 140px;
-  margin-left: 700px;
+  margin-top: 11%;
+  margin-left: 70%;
 }
 
 .blue-circle {
   z-index: 8;
   width: 4.5%;
   position: fixed;
-  margin-top: 50px;
-  margin-left: 840px;
+  margin-top: 4%;
+  margin-left: 86%;
 }
 
 .green-noodle {
   z-index: 9;
   width: 5.5%;
   position: fixed;
-  margin-top: 200px;
-  margin-left: 890px;
+  margin-top: 18%;
+  margin-left: 90%;
 }
 
 .pink-button {
   z-index: 10;
-  width: 9.5%;
+  width: 9.7%;
   position: fixed;
-  margin-top: 280px;
-  margin-left: 770px;
+  margin-top: 27%;
+  margin-left: 76%;
 }
 
 .blue-cone {
   z-index: 11;
   width: 6%;
   position: fixed;
-  margin-top: 440px;
-  margin-left: 890px;
+  margin-top: 43%;
+  margin-left: 89%;
 }
 
-@media (min-width: 400px) {
-  .blue-button {
-    margin-left: 180px;
-  }
-}
-
-@media (min-width: 600px) {
-  .blue-button {
-    margin-left: 230px;
-  }
-}
-
-@media (min-width: 700px) {
-  .blue-button {
-    margin-left: 380px;
-    margin-top: 120px;
-  }
-  .blue-noodle {
-    margin-top: 50px;
-    margin-left: 50px;
-  }
-  .pink-cone {
-    margin-left: 270px;
+@media (min-width: 500px) {
+  .grid {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    background-image: url(img/background.svg);
+    background-size: cover;
+    transform: translateX(0px) rotate(0deg);
   }
 }
 
-@media (min-width: 1000px) {
-  .blue-button {
-    margin-left: 400px;
-  }
-  .green-circle {
-    margin-top: 375px;
-    margin-left: 150px;
-  }
-  .pink-cone {
-    margin-top: 460px;
-    margin-left: 300px;
-  }
-  .green-button {
-    margin-top: 120px;
-    margin-left: 780px;
-  }
-  .blue-circle {
-    margin-top: 40px;
-    margin-left: 910px;
-  }
-  .green-noodle {
-    margin-top: 210px;
-    margin-left: 950px;
-  }
-  .pink-button {
-    margin-top: 280px;
-    margin-left: 815px;
-  }
-  .blue-cone {
-    margin-top: 460px;
-    margin-left: 930px;
-  }  
-}
-
-@media (min-width: 1400px) {
-  .blue-button {
-    margin-left: 560px;
-  }
-  .blue-noodle {
-    margin-top: 70px;
-    margin-left: 70px;
-  }
-  .green-circle {
-    margin-top: 530px;
-    margin-left: 220px;
-  }
-  .pink-cone {
-    margin-top: 645px;
-    margin-left: 420px;
-  }
-  .green-button {
-    margin-left: 1050px;
-  }
-  .blue-circle {
-    margin-left: 1250px;
-  }
-  .green-noodle {
-    margin-left: 1320px;
-    margin-top: 255px;
-  }
-  .pink-button {
-    margin-top: 370px;
-    margin-left: 1130px;
-  }
-  .blue-cone {
-    margin-top: 650px;
-    margin-left: 1235px;
-  }    
+@media (min-width: 1400px) {  
   p {
     font-size: 26px !important;
   }
 }
 
-@media (min-width: 2500px) {
-  .blue-button {
-    margin-left: 1000px;
-    margin-top: 200px;
-  }
-  .blue-noodle {
-    margin-top: 90px;
-    margin-left: 90px;
-  }
-  .green-circle {
-    margin-top: 850px;
-    margin-left: 480px;
-  }
-  .pink-cone {
-    margin-top: 1160px;
-    margin-left: 785px;
-  }
-  .green-button {
-    margin-left: 1900px;
-    margin-top: 280px;
-  }
-  .blue-circle {
-    margin-left: 2200px;
-    margin-top: 100px;
-  }
-  .green-noodle {
-    margin-left: 2370px;
-    margin-top: 500px;
-  }
-  .pink-button {
-    margin-top: 700px;
-    margin-left: 2020px;
-  }
-  .blue-cone {
-    margin-top: 1170px;
-    margin-left: 2200px;
-  }     
+@media (min-width: 2500px) { 
   p {
     font-size: 60px !important;
   }
@@ -248,8 +131,10 @@ footer {
   color: #d8e3db !important;
   position: fixed;
   left: 0;
+  z-index: 100;
   bottom: 10px;
   width: 100%;
+  margin: 20px;
   text-align: center;
-  font-size: 13px !important;
+  font-size: 19px !important;
 }
