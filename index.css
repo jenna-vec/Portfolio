@@ -17,10 +17,8 @@ a {
 .grid {
   position: fixed;
   z-index: 1;
-  height: 100%;
+  width: 350%;
   background-image: url(img/background.svg);
-  background-size: cover;
-  transform: translateX(-327px) rotate(90deg);
 }
 
 .blue-noodle {
@@ -103,7 +101,9 @@ a {
   margin-left: 89%;
 }
 
-@media (min-width: 500px) {
+@media only screen 
+  and (min-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 1){
   .grid {
     position: fixed;
     z-index: 1;
@@ -111,7 +111,6 @@ a {
     height: auto;
     background-image: url(img/background.svg);
     background-size: cover;
-    transform: translateX(0px) rotate(0deg);
   }
 }
 
