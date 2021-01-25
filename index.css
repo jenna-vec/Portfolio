@@ -1,3 +1,9 @@
+/* 320-480 mobile
+  481-768 tablet
+  769-1024 small
+  1025-1400 desktop, laptop
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -5,8 +11,8 @@
 }
 
 body {
-    background-color: black;
-    font-family: 'Nunito', sans-serif;
+    background-color: #e2dfea;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 a {
@@ -14,25 +20,66 @@ a {
   text-decoration: none;
 }
 
+.appear {
+  transform:rotateX(10deg);
+}
+
+.highlight-box {
+  background-color: #74a591;
+  margin-left: 35.5%;
+  margin-top: 25%;
+  position: absolute;
+  z-index: 12;
+  width: 37.7%;
+  height: 74px;
+}
+
+.main-head-text {
+  color: #dda591;
+  font-size: 101px;
+  font-weight: 900;
+  text-shadow: 2px 2px #e2dfea;
+  margin-left: 35.5%;
+  margin-top: 20.9%;
+  position: absolute;
+  z-index: 13;
+}
+
+.header {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+  display: flex;
+}
+
+.header > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  pointer-events: none;
+}
+
 .grid {
-  position: fixed;
   z-index: 1;
-  width: 319%;
-  background-image: url(img/background.svg);
+  height: 90vh;
+  position: relative !important;
+  box-shadow: rgb(51 48 58 / 20%) 0px 8px 24px;
+  border-bottom: 1px solid #33303a;
 }
 
 .blue-noodle {
   width: 10%;
   z-index: 2;
-  position: fixed;
   margin-top: 15%;
   margin-left: 9%;
 }
 
 .pills {
-  width: 40%;
+  width: 37%;
   z-index: 3;
-  position: fixed;
   margin-top: 30%;
   margin-left: 1%;
   transform: rotate(-18deg);
@@ -41,7 +88,6 @@ a {
 .blue-button {
   z-index: 4;
   width: 6%;
-  position: fixed;
   margin-top: 160%;
   margin-left: 6%;
 }
@@ -50,14 +96,12 @@ a {
   z-index: 5;
   width: 13%;
   margin-top: 100%;
-  position: fixed;
   margin-left: 10%;
 }
 
 .pink-cone {
   z-index: 6;
   width: 10%;
-  position: fixed;
   margin-top: 137%;
   margin-left: 25%;
 }
@@ -65,7 +109,6 @@ a {
 .green-button {
   z-index: 7;
   width: 8%;
-  position: fixed;
   margin-top: 40%;
   margin-left: 73%;
 }
@@ -73,7 +116,6 @@ a {
 .blue-circle {
   z-index: 8;
   width: 8%;
-  position: fixed;
   margin-top: 17%;
   margin-left: 86%;
 }
@@ -81,7 +123,6 @@ a {
 .green-noodle {
   z-index: 9;
   width: 11%;
-  position: fixed;
   margin-top: 132%;
   margin-left: 77%;
 }
@@ -89,25 +130,27 @@ a {
 .pink-button {
   z-index: 10;
   width: 16%;
-  position: fixed;
   margin-top: 70%;
   margin-left: 76%;
 }
 
 .blue-cone {
   z-index: 11;
-  width: 9%;
-  position: fixed;
+  width: 8%;
   margin-top: 155%;
   margin-left: 85%;
+}
+
+#filler {
+  height: 50%;
+  padding-top: 3000px;
+  background-color: #74a591;
+  z-index: 14;
 }
 
 @media only screen 
   and (min-device-width: 425px)
   and (-webkit-min-device-pixel-ratio: 1){
-    .grid {
-      width: 269%;
-    }
     .pills {
       width: 40%;
       margin-top: 24%;
@@ -159,8 +202,6 @@ a {
   and (min-device-width: 768px)
   and (-webkit-min-device-pixel-ratio: 1){
   .grid {
-    width: 100%;
-    height: auto;
     background-image: url(img/background.svg);
     background-size: cover;
   }
@@ -170,9 +211,10 @@ a {
     margin-left: 5%;
   }
   .pills {
-    width: 32%;
-    margin-top: 1%;
-    transform:rotate(0deg);
+    width: 31%;
+    margin-top: 3%;
+    margin-left: -1%;
+    transform: rotate(351deg);
   }
   .blue-button {
     width: 5%;
@@ -232,14 +274,17 @@ a {
 }
 
 footer {
-  color: #d8e3db !important;
   position: fixed;
-  left: 0;
   z-index: 100;
   bottom: 10px;
   width: 100%;
   margin: 20px;
-  padding-right: 25px;
-  text-align: center;
-  font-size: 25px !important;
+}
+
+.footer-text {
+  font-weight: 200;
+  color: #33303a !important;
+  text-align: center !important;
+  font-size: 10px !important;
+  font-style: italic;
 }
