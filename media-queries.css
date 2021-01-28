@@ -333,19 +333,6 @@ h1 {
     margin-left: 84%;
   }
   .main-head-text {
-    font-size: 406%;
-  }
-  .subtitle {
-    font-size: 179%;
-  }
-}
-
-/*  Galaxy S8-10------------------------------------------------*/
-@media only screen
-  and (min-device-width: 360px)
-  and (max-device-width: 740px)
-  and (-webkit-min-device-pixel-ratio: 4) {
-  .main-head-text {
     font-size: 1115%;
     font-size: 1138%;
     margin-top: -3.4%;
@@ -354,19 +341,8 @@ h1 {
   .subtitle {
     font-size: 494%;
   }
-  .highlight-box {
-    height: 9%;
-  }
-  #highlight-box3 {
-    height: 4.8%;
-  }
-  #highlight-box2 {
-    height: 4.8%;
-  }
-  .grid {
-    display: none;
-  }  
 }
+
 
 
 /* Phone with larger height ------------------------------- */
