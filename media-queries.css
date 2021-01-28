@@ -349,17 +349,52 @@ h1 {
     margin-top: 12%;
     margin-left: 7%;
   }
+  .green-button {
+    width: 8%;
+    margin-top: 39%;
+    margin-left: 75%;
+  }
+  .blue-circle {
+    margin-top: 63%;
+    margin-left: 86%;
+  }
   .blue-button {
     width: 6%;
-    margin-top: 197%;
-    margin-left: 5%;
+    margin-top: 192%;
+    margin-left: 9%;
+  }
+  .pink-button {
+    width: 9%;
+    margin-top: 13%;
+    margin-left: 86%;
   }
   .pink-cone {
-    margin-top: 170%;
+    margin-top: 157%;
+    width: 11%;
+    margin-left: 21%;
   }
   .blue-circle {
     margin-top: 131%;
     margin-left: 84%;
+  }
+  .green-noodle {
+    width: 11%;
+    margin-top: 181%;
+    margin-left: 73%;
+  }
+  .blue-cone {
+    width: 8%;
+    margin-top: 141%;
+    margin-left: 86%;
+  }
+  .main-head-text {
+    font-size: 1115%;
+    font-size: 1138%;
+    margin-top: -3.4%;
+    margin-left: 1.5%;
+  }
+  .subtitle {
+    font-size: 494%;
   }
   .highlight-box {
     height: 9%;
