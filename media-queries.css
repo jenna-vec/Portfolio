@@ -1,4 +1,3 @@
-
 /* main measurements -------------------------------------------------------------*/
 .highlight-box, #highlight-box2, #highlight-box3 {
   background-color: #dda590;
@@ -175,6 +174,7 @@ h1 {
   }
 }
 
+/* IPHONE LANDSCAPE --------------------------------------- */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -276,11 +276,79 @@ h1 {
   }
 }
 
-/*  ----------------------------------------------------------*/
+
+/* Galaxy S8-10 ---------------------------------------------*/
+@media only screen
+  and (min-device-width: 360px)
+  and (max-device-width: 740px) {
+
+  .blue-noodle {
+    width: 10%;
+    margin-top: 12%;
+    margin-left: 8%;
+  }
+  .pills {
+    width: 37%;
+    margin-top: 27%;
+    margin-left: 2%;
+  }
+  .pink-button {
+    width: 9%;
+    margin-top: 16%;
+    margin-left: 86%;
+  }
+  .green-button {
+    width: 7%;
+    margin-top: 48%;
+    margin-left: 75%;
+  }
+  .green-circle {
+    width: 13%;
+    margin-top: 122%;
+    margin-left: 5%;
+  }
+  .pink-cone {
+    width: 9%;
+    margin-top: 158%;
+    margin-left: 20%;
+  }
+  .blue-button {
+    width: 6%;
+    margin-top: 191%;
+    margin-left: 9%;
+  }
+  .green-noodle {
+    width: 11%;
+    margin-top: 165%;
+    margin-left: 75%
+  }
+  .blue-circle {
+    margin-top: 194%;
+    margin-left: 89%;
+  }
+  .blue-cone {
+    width: 8%;
+    margin-top: 138%;
+    margin-left: 84%;
+  }
+  .main-head-text {
+    font-size: 406%;
+  }
+  .subtitle {
+    font-size: 179%;
+  }
+}
+
+/*  Galaxy S8-10------------------------------------------------*/
 @media only screen
   and (min-device-width: 360px)
   and (max-device-width: 740px)
   and (-webkit-min-device-pixel-ratio: 4) {
+  .blue-noodle {
+    width: 10%;
+    margin-top: 12%;
+    margin-left: 7%;
+  }
   .blue-button {
     width: 6%;
     margin-top: 197%;
@@ -350,6 +418,17 @@ h1 {
   .pink-cone {
     margin-top: 175%;
     margin-left: 21%;
+  }
+  .main-head-text {
+    font-size: 460%;
+    margin-top: -5%;
+    margin-left: 1.5%;
+  }
+  .subtitle {
+    font-size: 192%;
+    margin-top: -1.7%;
+    margin-left: 2.5%;
+    line-height: 1.54;
   }
 }
 
