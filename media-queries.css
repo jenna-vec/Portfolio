@@ -1,4 +1,3 @@
-
 /* main measurements -------------------------------------------------------------*/
 .highlight-box, #highlight-box2, #highlight-box3 {
   background-color: #dda590;
@@ -18,6 +17,10 @@ h1 {
   position: relative !important;
   box-shadow: rgb(51 48 58 / 20%) 0px 8px 24px;
   border-bottom: 1px solid #33303a;
+}
+
+.alt-words {
+  display: none;
 }
 
 .highlight-box {
@@ -143,7 +146,7 @@ h1 {
 
 
 
-/* Phone with shorter height ------------------------------- */
+/* Landscape ------------------------------- */
 @media screen 
   and (orientation: landscape) {
   .blue-noodle {
@@ -198,30 +201,27 @@ h1 {
     margin-left: 16%;
   }
   .highlight-box {
-    margin-left: 39.5%;
-    margin-top: 18%;
-    width: 45%;
-    height: 17%;
+    display: none;
   }
   .main-head-text {
-    font-size: 424%;
-    margin-top: -3.7%;
-    margin-left: 1.3%;
+    display: none;
   }
   .subtitle {
-    font-size: 140%;
-    margin-top: -.2%;
-    margin-left: 2.5%;
-    line-height: 1.54;
+    display: none;
   }
   #highlight-box2 {
-    margin-left: 39.5%;
-    height: 8.3%;
-    width: 45%;
-    margin-top: 27.3%;
+    display: none;
   }
   #highlight-box3 {
     display:none;
+  }
+  .alt-words {
+    display: block;
+    z-index: 12;
+    width: 100%;
+  }
+  .grid {
+    height: 100vh;
   }
 }
 
@@ -265,6 +265,7 @@ h1 {
   }
 }
 
+/*  ----------------------------------------------------------*/
 @media only screen
   and (min-device-width: 360px)
   and (max-device-width: 740px)
