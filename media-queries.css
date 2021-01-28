@@ -363,6 +363,9 @@ h1 {
   #highlight-box2 {
     height: 4.8%;
   }
+  .grid {
+    display: none;
+  }  
 }
 
 
