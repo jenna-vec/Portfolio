@@ -1,3 +1,4 @@
+
 /* main measurements -------------------------------------------------------------*/
 .highlight-box, #highlight-box2, #highlight-box3 {
   background-color: #dda590;
@@ -149,57 +150,6 @@ h1 {
 /* Landscape ------------------------------- */
 @media screen 
   and (orientation: landscape) {
-  .blue-noodle {
-    margin-left: 12%;
-    width: 5%;
-    margin-top: 4%;
-  }
-  .pills {
-    width: 24%;
-    margin-top: 3%;
-    margin-left: 8%;
-    transform: rotate(355deg);
-  }
-  .blue-button {
-    width: 3%;
-    margin-top: 2%;
-    margin-left: 37%;
-  }
-  .green-circle {
-    width: 7%;
-    margin-top: 41%;
-    margin-left: 5%;
-  }
-  .pink-cone {
-    width: 4%;
-    margin-top: 40%;
-    margin-left: 33%;
-  }
-  .pink-button {
-    width: 5%;
-    margin-top: 2%;
-    margin-left: 86%;
-  }
-  .green-noodle {
-    width: 6%;
-    margin-top: 33%;
-    margin-left: 85%;
-  }
-  .blue-circle {
-    width: 5%;
-    margin-top: 40%;
-    margin-left: 67%;
-  }
-  .green-button {
-    width: 6%;
-    margin-top: 7%;
-    margin-left: 73%;
-  }
-  .blue-cone {
-    width: 5%;
-    margin-top: 32%;
-    margin-left: 16%;
-  }
   .highlight-box {
     display: none;
   }
@@ -221,16 +171,77 @@ h1 {
     width: 100%;
   }
   .grid {
-    height: 100vh;
+    height: 120vh;
   }
 }
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    .grid {
+      height: 120vh;
+    }
+    .blue-noodle {
+      margin-left: 4%;
+      width: 6%;
+      margin-top: 8%;
+    }
+    .pills {
+      width: 27%;
+      margin-top: 3%;
+      margin-left: 2%;
+      transform: rotate(355deg);
+    }
+    .blue-button {
+      margin-top: 2%;
+      margin-left: 35%;
+      width: 4%;
+  }
+    .green-circle {
+      width: 10%;
+      margin-top: 48%;
+      margin-left: 0%;
+    }
+    .pink-cone {
+      width: 4%;
+      margin-top: 48%;
+      margin-left: 29%;
+    }
+    .pink-button {
+      width: 6%;
+      margin-top: 3%;
+      margin-left: 92%;
+    }
+    .green-noodle {
+      width: 5%;
+      margin-top: 49%;
+      margin-left: 69%;
+    }
+    .blue-circle {
+      width: 5%;
+      margin-top: 42%;
+      margin-left: 88%;
+    }
+    .green-button {
+      width: 4%;
+      margin-top: 10%;
+      margin-left: 79%;
+    }
+    .blue-cone {
+      width: 5%;
+      margin-top: 36%;
+      margin-left: 16%;
+    }
+}
 
 
 /* Phone with shorter height ------------------------------- */
 @media only screen 
   and (min-device-width : 375px) 
   and (max-device-width : 667px)
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio : 2) {
   .highlight-box {
     height: 10.1%;
