@@ -18,7 +18,3 @@ body {
     transform:rotateX(10deg);
   }
   
-.header {
-    overflow: hidden;
-    position: absolute;
-}
