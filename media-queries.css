@@ -1,14 +1,18 @@
+img {
+  position: absolute;
+  object-fit: cover;
+  pointer-events: none;
+}
+
 .grid {
   z-index: 1;
   width: 100vh;
-  position: relative !important;
   display: none;
 }
 
 .grid2 {
   z-index: 1;
-  width: 100vh;
-  position: relative !important;
+  height: 125%;
 }
 
 .shapes {
@@ -22,30 +26,33 @@
   height: 100vh;
 }
 
-.hello {
+.title-frame {
+  width: 100%;
+  display: flex;
   justify-content: right;
+}
+
+.hello {
   z-index: 3;
   width: 100vh;
   display: none;
   right: 0px;
-  overflow: auto;
   float: right;
 }
 
 .hello2 {
-  justify-content: right;
   z-index: 3;
   height: 100vh;
   right: 0px;
-  overflow: auto;
   float: right;
 }
 
 #filler {
   width: 100vh;
-  padding-top: 1000px;
+  margin-top: 300%;
   background-color: #74a591;
   z-index: 5;
+  position: absolute;
 }
 
 /* LANDSCAPE --------------------------------------- */
