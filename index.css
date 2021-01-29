@@ -20,33 +20,7 @@ body {
   
   .header {
     overflow: hidden;
-    position: relative;
-    height: 100vh;
-    justify-content: center;
-    width: 100vw;
-    display: flex;
-  }
-
-  .header > img {
     position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    pointer-events: none;
-  }
-
-  footer {
-    position: relative;
-    z-index: 100;
-    bottom: 10px;
-    width: 100%;
-    margin: 20px;
-  }
-  
-  .footer-text {
-    font-weight: 200;
-    color: #33303a !important;
-    text-align: center !important;
-    font-size: 20px !important;
-    font-style: italic;
-  }
+    height: 100vh;
+    width: 100vw;
+}
