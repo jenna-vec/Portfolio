@@ -71,7 +71,6 @@ img {
     .grid, .shapes, .hello {
       display: block;
     }
-    
     .grid2, .shapes-left, .shapes-right, .hello2 {
       display: none;
     }
@@ -88,6 +87,20 @@ img {
     }
 }
 
+/* GALAXY S6-9 -------------------------------------- */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) 
+  and (orientation: landscape) {
+    .grid {
+      width: 106%;
+    }
+    .shapes {
+      width: 110%;
+    }
+}
+
 /* IPHONE X LANDSCAPE --------------------------------*/
 @media only screen 
   and (min-device-width: 375px) 
@@ -100,9 +113,7 @@ img {
       display: block;
     }
     .hello {
-      width: 166vh;
       display: block;
-      margin-top: 3%;
     }
 }
 
@@ -139,6 +150,7 @@ img {
   and (min-device-width: 1440px) {
     .hello {
       display: block;
+      margin-top: 2.3%;
     }
     .hello2 {
       display: none;
