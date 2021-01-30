@@ -1,3 +1,4 @@
+/* MOBILE -----------------------------------------------*/
 img {
   position: absolute;
   object-fit: cover;
@@ -6,7 +7,7 @@ img {
 
 .grid {
   z-index: 1;
-  width: 100vh;
+  width: 100%;
   display: none;
 }
 
@@ -17,16 +18,26 @@ img {
 
 .shapes {
   z-index: 2;
-  width: 100vh;
+  width: 100%;
   display: none;
 }
 
-.shapes2 {
+.shapes-left {
   z-index: 2;
   height: 100vh;
+  left: 0px;
+  float: left;
+}
+
+.shapes-right {
+  z-index: 2;
+  height: 100vh;
+  right: 0px;
+  float: right;
 }
 
 .title-frame {
+  width: 100%;
   display: flex;
   justify-content: right;
 }
@@ -57,26 +68,87 @@ img {
 /* LANDSCAPE --------------------------------------- */
 @media only screen 
   and (orientation: landscape) { 
-    .grid {
+    .grid, .shapes, .hello {
       display: block;
     }
     
+    .grid2, .shapes-left, .shapes-right, .hello2 {
+      display: none;
+    }
+    .hello {
+      width: 155vh;
+      display: block;
+      margin-top: 3%;
+    }
+}
+
+/* Phone 6+, 7+ and 8+ ------------------------------ */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .grid {
+      width: 104%;
+    }
+}
+
+/* IPHONE X LANDSCAPE --------------------------------*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .shapes {
+      z-index: 2;
+      width: 186vh;
+      display: block;
+    }
+    .hello {
+      width: 166vh;
+      display: block;
+      margin-top: 3%;
+    }
+}
+
+/* TABLET PORTRAIT --------------------------------*/
+@media only screen
+  and (min-device-width: 481px)
+  and (min-device-width: 481px)
+  and (orientation: portrait) {
+    .grid {
+      display: block;
+      height: 100vh;
+      width: auto;
+      transform:translateX(-26px);
+    }
     .grid2 {
       display: none;
     }
-    
-    .shapes {
+  }
+
+/* SMALL LAPTOP -----------------------------------*/
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1300px) {
+    .hello {
+      width: 124vh;
       display: block;
+      margin-top: 3%;
     }
-    
-    .shapes2 {
+    .hello2 {
       display: none;
     }
-    
+  }
+
+/* LAPTOP ----------------------------------------*/
+@media only screen
+  and (min-device-width: 1440px) {
     .hello {
+      width: 173vh;
       display: block;
+      margin-top: 2.3%;
     }
-    
     .hello2 {
       display: none;
     }
