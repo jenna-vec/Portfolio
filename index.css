@@ -1,29 +1,43 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
   
 body {
   background-color: #e2dfea;
   font-family: 'Nunito Sans', sans-serif;
 }
   
-  a {
-    color: #d8e3db !important;
-    text-decoration: none;
-  }
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.header > img {
+  pointer-events: none;
+  position: absolute;
+  object-fit: cover;
+}
+ 
+a {
+  color: #d8e3db !important;
+  text-decoration: none;
+}
   
-  .appear {
-    transform:rotateX(10deg);
-  }
-  
-  .header {
-    overflow: hidden;
-    position: absolute;
-    display: flex;
-    height: 100vh;
-    width: 100vw;
+.appear {
+  transform:rotateX(10deg);
+}
+
+#filler {
+  background-color: #74a591;
+  z-index: 5;
+  position: relative;
+  height: 500px;
+  display: none;
 }
 
 @keyframes popUp {
