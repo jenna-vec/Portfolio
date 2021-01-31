@@ -18,3 +18,26 @@ body {
     transform:rotateX(10deg);
   }
   
+  .header {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+@keyframes popUp {
+  from {
+    margin-top: 150px;
+    opacity: .6;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+.hello, .hello2 {
+  animation: 1s ease-out 0s 1 popUp;
+  transform-origin: bottom; 
+}
