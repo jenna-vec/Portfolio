@@ -1,14 +1,12 @@
 /* MOBILE -----------------------------------------------*/
-img {
-  position: absolute;
-  object-fit: cover;
-  pointer-events: none;
-}
 
 .grid {
   z-index: 1;
-  width: 100%;
   display: none;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #32313a;
+  width: 100%;
 }
 
 .grid2 {
@@ -18,51 +16,37 @@ img {
 
 .shapes {
   z-index: 2;
-  width: 100%;
   display: none;
+  width: 100%;
 }
 
 .shapes-left {
   z-index: 2;
-  height: 100vh;
   left: 0px;
   float: left;
+  width: 82%;
 }
 
 .shapes-right {
   z-index: 2;
-  height: 100vh;
   right: 0px;
   float: right;
-}
-
-.title-frame {
-  width: 100%;
-  display: flex;
-  justify-content: right;
+  width: 82%;
 }
 
 .hello {
   z-index: 3;
-  width: 100%;
   display: none;
   right: 0px;
   float: right;
+  width: 100%
 }
 
 .hello2 {
   z-index: 3;
-  height: 100vh;
   right: 0px;
   float: right;
-}
-
-#filler {
-  width: 100vh;
-  margin-top: 300%;
-  background-color: #74a591;
-  z-index: 5;
-  position: absolute;
+  width: 86%
 }
 
 /* LANDSCAPE --------------------------------------- */
@@ -87,7 +71,22 @@ img {
     }
 }
 
-/* GALAXY S6-9 -------------------------------------- */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (orientation: portrait) {
+    .shapes-left {
+      width: 81%;
+    }
+    .shapes-right {
+      width: 81%;
+    }
+    .hello2 {
+      width: 81%;
+    }
+}
+
+/* GALAXY S6-8 -------------------------------------- */
 @media screen 
   and (device-width: 360px) 
   and (device-height: 640px) 
@@ -97,19 +96,44 @@ img {
       width: 106%;
     }
     .shapes {
-      width: 130vh;
+      width: 130%;
     }
 }
 
 /* GALAXY S6-9 PORTRAIT ----------------------------- */
 @media screen 
   and (device-width: 360px) 
-  and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 4) 
   and (orientation: portrait) {
     .grid2 {
 	    transform: translateX(-7px);
     }
+    .shapes-left {
+      width: 94%;
+    }
+    .shapes-right {
+      width: 94%;
+    }
+    .hello2 {
+      width: 94%;
+    }
+}
+
+/* GALAXY S10 PORTRAIT ------------------------------ */
+@media only screen 
+and (min-device-height: 360px) 
+and (min-device-width: 760px) 
+and (orientation: portrait) 
+and (-webkit-device-pixel-ratio: 4){
+  .shapes-left {
+    width: 97%;
+  }
+  .shapes-right {
+    width: 97%;
+  }
+  .hello2 {
+    width: 92%;
+  }
 }
 
 /* IPHONE X LANDSCAPE --------------------------------*/
@@ -119,11 +143,29 @@ img {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
     .shapes {
-      width: 186vh;
+      width: 85%;
       display: block;
     }
     .hello {
       display: block;
+      width: 88%;
+    }
+}
+
+/* IPHONE X PORTRAIT --------------------------------*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .shapes-left {
+      width: 100%;
+    }
+    .shapes-right {
+      width: 100%;
+    }
+    .hello2 {
+      width: 99%;
     }
 }
 
@@ -134,7 +176,7 @@ img {
   and (orientation: portrait) {
     .grid {
       display: block;
-      height: 100vh;
+      height: 100%;
       width: auto;
       transform:translateX(-26px);
     }
@@ -143,10 +185,37 @@ img {
     }
   }
 
+/* IPAD PORTRAIT ---------------------------------*/
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .grid {
+      display: block;
+      height: 100%;
+      width: auto;
+      transform:translateX(-26px);
+    }
+    .grid2 {
+      display: none;
+    }
+    .hello2 {
+      width: 62%;
+    }
+    .shapes-left {
+      width: 61%;
+    }
+    .shapes-right {
+      width: 61%;
+    }
+}
+
 /* SMALL LAPTOP -----------------------------------*/
 @media only screen
   and (min-device-width: 1024px)
-  and (max-device-width: 1300px) {
+  and (max-device-width: 1300px)
+  and (orientation: landscape) {
     .hello {
       display: block;
     }
