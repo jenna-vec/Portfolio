@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --main-bg-color: #e2dfea;
+}
   
 body {
   background-color: #e2dfea;
@@ -11,6 +15,7 @@ body {
   
 .header {
   position: relative;
+  background-color: #e2dfea;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -37,7 +42,7 @@ a {
   z-index: 5;
   position: relative;
   height: 500px;
-  display: none;
+  display: block;
 }
 
 @keyframes popUp {
