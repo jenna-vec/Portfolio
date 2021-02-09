@@ -834,9 +834,9 @@ body {
 
 /* Laptop -----------------------------------*/
 @media screen 
-  and (min-device-width: 1200px) 
+  and (min-device-width: 1000px) 
   and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+  and (orientation: landscape) { 
     #landscape-words {
       padding-top: 29%;
       width: 92%;
