@@ -179,7 +179,7 @@ body {
   }
 
   #pills {
-    grid-row-start: 2;
+    grid-row: 2 / span 2;
     grid-column-start: 1;
   }
 
@@ -247,7 +247,7 @@ body {
 
   #hello{
     grid-column: 2 / span 3;
-    grid-row-start: 3 / span 2;
+    grid-row: 3 / span 2;
   }
 
   #landscape-words {
@@ -322,6 +322,30 @@ body {
     }
     #noodle-green > img {
       padding-top: 62%;
+    }
+}
+
+/* Galaxy S8-10+-----------------------------------*/
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 740px)
+  and (-webkit-min-device-pixel-ratio: 4)
+  and (orientation: portrait){
+    .hamburger {
+      width: 7%;
+      padding-left: 89%;
+      padding-top: 2.7%;
+    }
+    #torus-green > img {
+      padding-top: 126%;
+      padding-bottom: 10%;
+    }
+    #cone-blue > img {
+      padding-top: 140%;
+      padding-bottom: 10%;
+    }
+    #noodle-green > img {
+      padding-top: 73%;
     }
 }
 
