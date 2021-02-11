@@ -1,12 +1,15 @@
 :root {
   --main-bg-color: #e2dfea;
 }
-
 body {
   background-color: #e2dfea;
   font-family: 'Nunito Sans', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header {
@@ -18,12 +21,27 @@ body {
 
 #nav-column {
   transition: transform 0.4s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 #nav {
   width: 100%;
   background-color: #288bd6;
-  box-shadow: rgba(159, 153, 173, 0.25) 0px 13px 27px -5px, rgba(125, 119, 140, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(159, 153, 173, 0.25) 0px 13px 27px -5px, rgba(125, 119, 140, 0.5) 0px 8px 16px -8px;
+}
+
+.home-link, .hamburger {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.home-link {
+  color: #e2dfea;
+  font-weight: 900;
+  font-size: 120%;
 }
 
 .scroll-down #nav-column {
@@ -121,6 +139,21 @@ body {
   width: 30%;
 }
 
+#noodle-green >img:hover {
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: rotate(359deg);
+    transform-origin: bottom;
+  }
+}
+
 #torus-blue > img {
   width: 20%;
 }
@@ -164,7 +197,6 @@ body {
   .hamburger {
     width: 7%;
     padding-left: 89%;
-    padding-top: 3%;
   }
 
   #noodle-blue {
@@ -254,6 +286,10 @@ body {
     display: none;
   }
 
+  .home-link {
+    display: none;
+  }
+
   #cone-blue {
     grid-row-start: 4;
     grid-column-start: 3;
@@ -306,7 +342,6 @@ body {
   and (orientation: portrait) {
     .hamburger {
       width: 7%;
-      padding-top: 2%;
     }
     #torus-green > img {
       padding-top: 99%;
@@ -334,7 +369,6 @@ body {
     .hamburger {
       width: 7%;
       padding-left: 89%;
-      padding-top: 2.5%;
     }
     #torus-green > img {
       padding-top: 126%;
@@ -356,9 +390,6 @@ body {
   and (device-aspect-ratio : 375/667)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
-    .hamburger {
-      padding-top: 2%;
-    }
     #torus-green > img {
       padding-top: 124%;
     }
@@ -405,9 +436,6 @@ body {
       }
       #cone-blue > img {
         padding-top: 127%;
-      }
-      .hamburger {
-        padding-top: 2%;
       }
 }
 
@@ -484,6 +512,9 @@ body {
       padding-top: 26%;
       width: 88%;
       padding-left: 12%;
+    }
+    .home-link {
+      display: inherit;
     }
     #hello{
       grid-column: 4 / span 4;
@@ -808,6 +839,11 @@ body {
 
     #landscape-words {
       display: inherit;
+    }
+
+    .home-link {
+      display: inherit;
+      padding-left: 2%;
     }
 
     #hello{
