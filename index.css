@@ -411,6 +411,44 @@ body {
       }
 }
 
+/* Galaxy Note 10+ -----------------------------------*/
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-height: 718px) 
+  and (-webkit-device-pixel-ratio: 4)
+  and (orientation: landscape){
+    #landscape-words {
+      padding-top: 26%;
+      width: 92%;
+      padding-left: 8%;
+    }
+    #button-green > img {
+      padding-left: 54%;
+      padding-top: 78%;
+      width: 30%;
+    }
+    #torus-blue > img {
+      padding-left: 68%;
+      padding-top: 81%;
+    }
+    #pink-cone {
+      padding-left: 27%;
+      padding-top: 46%;
+    }
+    #cone-blue > img {
+      padding-top: 217%;
+      padding-left: 25%;
+    }
+    #torus-green > img {
+      padding-left: 12%;
+      padding-top: 61%;
+    }
+    #noodle-pink > img {
+      padding-left: 70%;
+      padding-top: 34%;
+    }
+}
+
 /* Multiple Mobile Landscapes -----------------------------------*/
 @media only screen 
   and (min-device-width: 375px) 
@@ -425,8 +463,9 @@ body {
       padding-left: 28%;
     }
     #pink-cone {
-      padding-top: 38%;
-      padding-left: 35%;
+      padding-top: 33%;
+      padding-left: 47%;
+      width: 20%;
     }
     #torus-blue > img {
       padding-top: 52%;
@@ -437,8 +476,8 @@ body {
       padding-left: 51%;
     }
     #button-green > img {
-      padding-top: 56%;
       padding-left: 57%;
+      padding-top: 57%;
     }
     #landscape-words {
       display: inherit;
@@ -462,9 +501,9 @@ body {
       transform: rotate(6deg);
     }
     #button-pink > img {
-      width: 40%;
-      padding-left: 30%;
-      padding-top: 20%;
+      width: 23%;
+      padding-left: 57%;
+      padding-top: 18%;
     }
     #button-blue > img {
       padding-left: 60%;
@@ -484,7 +523,7 @@ body {
   and (-webkit-device-pixel-ratio: 2)
   and (orientation: landscape) {
     #landscape-words {
-      padding-top: 20%;
+      padding-top: 22%;
       width: 92%;
       padding-left: 8%;
     }
@@ -524,11 +563,11 @@ body {
     }
     #pink-cone {
       padding-left: 27%;
-      padding-top: 51%;
+      padding-top: 42%;
     }
     #button-green > img {
       padding-left: 54%;
-      padding-top: 63%;
+      padding-top: 69%;
     }
     #noodle-pink > img {
       display: inherit;
@@ -537,8 +576,8 @@ body {
       padding-top: 20%;
     }
     #torus-blue > img {
-      padding-left: 58%;
-      padding-top: 66%;
+      padding-left: 68%;
+      padding-top: 62%;
     }
 }
 
@@ -574,7 +613,7 @@ body {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
     #torus-green > img {
-      padding-top: 82%;
+      padding-top: 62%;
       width: 51%;
       padding-left: 10%;
     }
@@ -584,14 +623,13 @@ body {
       width: 32%;
     }
     #pink-cone {
-      padding-top: 80%;
+      padding-top: 62%;
       padding-left: 35%;
-      width: 31%;
+      width: 31% !important;
     }
     #torus-blue > img {
-      padding-top: 104%;
+      padding-top: 83%;
       padding-left: 49%;
-      width: 24%;
     }
     #noodle-pink > img {
       padding-top: 30%;
@@ -599,13 +637,12 @@ body {
       padding-left: 51%;
     }
     #button-green > img {
-      padding-top: 91%;
+      padding-top: 79%;
       width: 30%;
       padding-left: 45%;
     }
     #landscape-words {
-      display: inherit;
-      padding-top: 30%;
+      padding-top: 34%;
       width: 88%;
       padding-left: 12%;
     }
@@ -651,6 +688,9 @@ body {
     #landscape-words {
       padding-top: 32%;
     }
+    #button-pink > img {
+      width: 32%;
+    }
     #torus-green > img {
       padding-top: 59%;
     }
@@ -684,7 +724,7 @@ body {
   and (-webkit-device-pixel-ratio : 3) 
   and (orientation : landscape) { 
     #landscape-words {
-      padding-top: 20%;
+      padding-top: 23%;
       width: 92%;
       padding-left: 8%;
     }
@@ -737,6 +777,7 @@ body {
     }
     #torus-blue > img {
       padding-top: 63%;
+      padding-left: 69%;
     }
 }
 
@@ -799,15 +840,12 @@ body {
     #button-pink {
       grid-column-start: 7;
     }
-    #button-pink > img {
-      width: 40%;
-    }
     #button-green {
       grid-column-start: 7;
       grid-row-start: 3;
     }
     #button-green > img {
-      width: 30%;
+      width: 25%;
     }
     #button-blue {
       grid-row-start: 2;
@@ -863,7 +901,7 @@ body {
   and (max-device-width: 1600px) 
   and (orientation: landscape) { 
     #landscape-words {
-      padding-top: 29%;
+      padding-top: 28%;
       width: 92%;
       padding-left: 8%;
     }
