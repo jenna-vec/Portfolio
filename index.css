@@ -218,7 +218,6 @@ a {
     position: absolute;
     width: 36%;
     height: 74%;
-    margin-top: 2%;
     background-color: #288bd6;
     letter-spacing: 2px;
     box-shadow: rgba(159, 153, 173, 0.25) 0px 13px 27px -5px, rgba(125, 119, 140, 1) 0px 8px 16px -8px;
@@ -230,6 +229,8 @@ a {
     color: #e2dfea;
     font-weight: 900;
     font-size: 360%;
+    height: 100%;
+    line-height: 166%;
   }
 
   #noodle-blue {
@@ -424,6 +425,9 @@ a {
   and (device-aspect-ratio : 375/667)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
+    .bar > a {
+      line-height: 142%;
+    }
     #torus-green > img {
       padding-top: 124%;
     }
@@ -453,6 +457,9 @@ a {
     and (orientation : portrait) 
     and (-webkit-min-device-pixel-ratio : 3) 
     and (-webkit-device-pixel-ratio : 3) {
+      .bar > a {
+        line-height: 137%;
+      }
       #torus-green > img {
         padding-top: 124%;
       }
