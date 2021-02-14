@@ -30,3 +30,15 @@ window.addEventListener("scroll", function(){
       }
     lastScroll = offset;
 });
+
+$(document).ready(function(){
+	$('.hamburger').click(function(){
+		$(this).toggleClass('open');
+    if ($(".bar").css("display") === "none"){
+      $(".bar").css("display", "inherit");
+    }
+    else {
+      $(".bar").css("display", "none");
+    }
+	});
+});
