@@ -10,7 +10,6 @@ const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let lastScroll = 0;
 
-
 window.addEventListener("scroll", function(){
     var offset = window.pageYOffset;
 
@@ -41,4 +40,7 @@ $(document).ready(function(){
       $(".bar").css("display", "none");
     }
 	});
+  $("#pink-button").hover(function(){
+    $(this).toggleClass("big");
+  })
 });
