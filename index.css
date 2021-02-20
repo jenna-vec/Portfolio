@@ -12,13 +12,6 @@ a {
   text-decoration: none;
 }
 
-.header {
-  display: grid;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #nav-column {
   transition: transform 0.4s;
   -webkit-transform-style: preserve-3d;
@@ -62,155 +55,36 @@ a {
   transform: none;
 }
 
-#noodle-blue {
-  grid-row-start: 2;
-  grid-column-start: 1;
-}
-
-#noodle-blue > img {
-  width: 33%;
-}
-
-#pills {
-  grid-row-start: 2;
-  grid-column-start: 1;
-}
-
-#pills > img {
-  width: 123%;
-}
-
-#button-pink {
-  grid-row-start: 2;
-  grid-column-start: 3;
-}
-
-#button-pink > img {
-  width: 31%;
-}
-
-#button-green > img {
-  width: 26%;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-  40% {transform: translateY(-25px);} 
-  60% {transform: translateY(-15px);} 
-} 
-
-#button-blue > img {
-  width: 16%;
-}
-
-#pink-cone {
-  width: 31%;
-}
-
-#torus-green > img {
-  width: 42%;
-}
-
-#hello:hover {
-  animation: boing .5s ease-in-out 1;
-}
-
-@keyframes boing {
-  0% {transform: translateY(0);} 
-  40% {transform: translateY(-25px);} 
-  100% {transform: translateY(0px);} 
-} 
-
-#words, #landscape-words {
-  width: 100%;
-}
-
-@keyframes popUp {
-  from {
-    transform: translateY(20%);
-    opacity: .6;
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  0% {opacity:1;}
-  100% {opacity:0;}
-}
-
-.grow:hover {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-  transform-origin: bottom;
-}
-
-#cone-blue > img {
-  width: 26%;
-}
-
-#noodle-green > img {
-  width: 30%;
-}
-
-#noodle-green >img:hover {
-  animation: rotation 1s linear infinite;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-    transform-origin: bottom;
-  }
-  100% {
-    transform: rotate(359deg);
-    transform-origin: bottom;
-  }
-}
-
-#torus-blue > img {
-  width: 20%;
-}
-
-#noodle-pink > img {
-  display: none;
-  width: 41%;
-}
-
 #filler {
-  background-color: #74a591;
-  z-index: 5;
-  position: relative;
-  height: 500px;
+  height: 50%;
+  width: 100%;
+  top: 100vh;
+  position: absolute;
+  background-image: linear-gradient(rgba(50, 49, 58, 0) 0em, transparent .1em), linear-gradient(90deg, rgba(50, 49, 58, .7) .2em, transparent .1em);
+  background-size: 2.5em 2.5em;
 }
-
-
 
 /* MOBILE -----------------------------------*/
 @media screen 
   and (orientation: portrait) { 
-
   .header {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 6% 1fr 1fr 1fr;
-    background: url(img/mobile-grid.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(rgba(50, 49, 58, .7) .4em, transparent .1em), linear-gradient(90deg, rgba(50, 49, 58, .7) .4em, transparent .1em);
+    background-size: 4em 4em;
   }
-
+  #filler {
+    background-image: linear-gradient(rgba(50, 49, 58, 0) 0em, transparent .1em), linear-gradient(90deg, rgba(50, 49, 58, .7) .4em, transparent .1em);
+    background-size: 4em 4em;
+  }
   #nav-column {
     grid-column: 1 / span 3;
   }
-
   #nav {
     height: 100%;
   }
-
   .bar {
     right: 0px;
     z-index: 5;
@@ -218,152 +92,29 @@ a {
     position: absolute;
     width: 36%;
     height: 74%;
+    top: 165%;
     background-color: #288bd6;
     letter-spacing: 2px;
     box-shadow: rgba(159, 153, 173, 0.25) 0px 13px 27px -5px, rgba(125, 119, 140, 1) 0px 8px 16px -8px;
   }
-  
   .bar > a {
     padding-left: 7%;
     vertical-align: middle;
     color: #e2dfea;
-    font-weight: 900;
+    font-weight: 400;
     font-size: 360%;
     height: 100%;
     line-height: 166%;
   }
-
-  #noodle-blue {
-    grid-row-start: 2;
-    grid-column-start: 1;
-  }
-
-  #noodle-blue > img {
-    width: 33%;
-    padding-left: 24%;
-    padding-top: 23%;
-  }
-
-  #pills {
-    grid-row: 2 / span 2;
-    grid-column-start: 1;
-  }
-
-  #pills > img {
-    width: 123%;
-    padding-top: 35%;
-    padding-left: 10%;
-  }
-
-  #button-pink {
-    grid-row-start: 2;
-    grid-column-start: 3;
-  }
-
-  #button-pink > img {
-    width: 31%;
-    padding-left: 61%;
-    padding-top: 37%;
-  }
-
-  #button-green {
-    grid-row-start: 2;
-    grid-column-start: 3;
-  }
-
-  #button-green > img {
-    width: 26%;
-    padding-left: 30%;
-    padding-top: 120%;
-  }
-
-  #button-blue {
-    grid-row-start: 3;
-    grid-column-start: 1;
-  }
-
-  #button-blue > img {
-    width: 16%;
-    padding-left: 26%;
-    padding-top: 152%;
-  }
-
-  #cone-pink {
-    grid-row-start: 4;
-    grid-column-start: 1;
-  }
-
-  #pink-cone {
-    width: 31%;
-    padding-left: 71%;
-    padding-top: 43%;
-  }
-
-  #torus-green {
-    grid-row-start: 4;
-    grid-column-start: 1;
-  }
-
-  #torus-green > img {
-    width: 42%;
-    padding-left: 12%;
-    padding-top: 140%;
-    padding-bottom: 10%;
-  }
-
   #hello{
     grid-column: 2 / span 3;
     grid-row: 3 / span 2;
   }
-
   #landscape-words {
     display: none;
   }
-
   .home-link, .about-link {
     display: none;
-  }
-
-  #cone-blue {
-    grid-row-start: 4;
-    grid-column-start: 3;
-  }
-
-  #cone-blue > img {
-    width: 26%;
-    padding-top: 145%;
-    padding-left: 68%;
-  }
-
-  #noodle-green {
-    grid-row-start: 4;
-    grid-column-start: 3;
-  }
-
-  #noodle-green > img {
-    width: 30%;
-    padding-left: 25%;
-    padding-top: 82%;
-  }
-
-  #torus-blue {
-    grid-row-start: 4;
-    grid-column-start: 3;
-  }
-
-  #torus-blue > img {
-    width: 20%;
-    padding-left: 57%;
-  }
-
-  #noodle-pink {
-    grid-row-start: 3;
-    grid-column-start: 6;
-  }
-
-  #noodle-pink > img {
-    display: none;
-    width: 41%;
   }
 }
 
@@ -382,41 +133,8 @@ a {
       padding-left: 9%;
       vertical-align: middle;
     }
-    #torus-green > img {
-      padding-top: 99%;
-    }
-    #pink-cone {
-      padding-top: 26%;
-    }
-    #button-blue > img {
-      padding-top: 110%;
-    }
-    #cone-blue > img {
-      padding-top: 114%;
-    }
-    #noodle-green > img {
-      padding-top: 62%;
-    }
 }
 
-/* Galaxy S8-10+-----------------------------------*/
-@media only screen 
-  and (min-device-width: 360px) 
-  and (max-device-width: 740px)
-  and (-webkit-min-device-pixel-ratio: 4)
-  and (orientation: portrait){
-    #torus-green > img {
-      padding-top: 126%;
-      padding-bottom: 10%;
-    }
-    #cone-blue > img {
-      padding-top: 140%;
-      padding-bottom: 10%;
-    }
-    #noodle-green > img {
-      padding-top: 73%;
-    }
-}
 
 /* iPhone 6/7/8 -----------------------------------*/
 @media only screen 
@@ -427,24 +145,6 @@ a {
   and (orientation: portrait) { 
     .bar > a {
       line-height: 142%;
-    }
-    #torus-green > img {
-      padding-top: 124%;
-    }
-    #pink-cone {
-      padding-top: 50%;
-    }
-    #button-blue > img {
-      padding-top: 128%;
-    }
-    #torus-blue > img {
-      padding-top: 19%;
-    }
-    #noodle-green > img {
-      padding-top: 76%;
-    }
-    #cone-blue > img {
-      padding-top: 127%;
     }
 }
 
@@ -460,24 +160,6 @@ a {
       .bar > a {
         line-height: 137%;
       }
-      #torus-green > img {
-        padding-top: 124%;
-      }
-      #pink-cone {
-        padding-top: 50%;
-      }
-      #button-blue > img {
-        padding-top: 128%;
-      }
-      #torus-blue > img {
-        padding-top: 19%;
-      }
-      #noodle-green > img {
-        padding-top: 76%;
-      }
-      #cone-blue > img {
-        padding-top: 127%;
-      }
 }
 
 /* Galaxy Note 10+ -----------------------------------*/
@@ -490,31 +172,6 @@ a {
       padding-top: 26%;
       width: 92%;
       padding-left: 8%;
-    }
-    #button-green > img {
-      padding-left: 54%;
-      padding-top: 78%;
-      width: 30%;
-    }
-    #torus-blue > img {
-      padding-left: 68%;
-      padding-top: 81%;
-    }
-    #pink-cone {
-      padding-left: 27%;
-      padding-top: 46%;
-    }
-    #cone-blue > img {
-      padding-top: 217%;
-      padding-left: 25%;
-    }
-    #torus-green > img {
-      padding-left: 12%;
-      padding-top: 61%;
-    }
-    #noodle-pink > img {
-      padding-left: 70%;
-      padding-top: 34%;
     }
 }
 
@@ -531,34 +188,9 @@ a {
   and (min-device-width: 375px) 
   and (max-device-width: 800px) 
   and (orientation: landscape) { 
-    #torus-green > img {
-      padding-top: 31%;
-      padding-left: 10%;
-    }
-    #cone-blue > img {
-      padding-top: 208%;
-      padding-left: 28%;
-    }
-    #pink-cone {
-      padding-top: 33%;
-      padding-left: 47%;
-      width: 20%;
-    }
-    #torus-blue > img {
-      padding-top: 52%;
-      padding-left: 49%;
-    }
-    #noodle-pink > img {
-      padding-top: 12%;
-      padding-left: 51%;
-    }
-    #button-green > img {
-      padding-left: 57%;
-      padding-top: 57%;
-    }
     #landscape-words {
       display: inherit;
-      padding-top: 26%;
+      margin-top: 26%;
       width: 88%;
       padding-left: 12%;
     }
@@ -568,31 +200,6 @@ a {
     #hello{
       grid-column: 4 / span 4;
       grid-row-start: 2;
-    }   
-    #noodle-blue > img {
-      width: 40%;
-      padding-left: 33%;
-      padding-top: 30%;
-    }
-    #pills > img {
-      width: 183%;
-      padding-top: 3%;
-      padding-left: 21%;
-      transform: rotate(6deg);
-    }
-    #button-pink > img {
-      width: 23%;
-      padding-left: 57%;
-      padding-top: 18%;
-    }
-    #button-blue > img {
-      padding-left: 60%;
-      padding-top: 34%;
-    }
-    #noodle-green > img {
-      width: 30%;
-      padding-left: 35%;
-      padding-top: 50%;
     }
 }
 
@@ -603,61 +210,9 @@ a {
   and (-webkit-device-pixel-ratio: 2)
   and (orientation: landscape) {
     #landscape-words {
-      padding-top: 22%;
+      margin-top: 22%;
       width: 92%;
       padding-left: 8%;
-    }
-    #button-blue > img {
-      width: 15%;
-      padding-left: 51%;
-      padding-top: 24%;
-    }
-    #noodle-blue > img {
-      padding-left: 29%;
-      padding-top: 20%;
-    }
-    #pills > img {
-      width: 162%;
-      padding-left: 17%;
-      padding-top: 6%;
-      transform: rotate(6deg);
-    }  
-    #torus-green > img {
-      padding-left: 12%;
-      width: 48%;
-      padding-top: 40%;
-    }
-    #button-pink > img {
-      width: 35%;
-      padding-top: 10%;
-      padding-left: 41%;
-    }
-    #noodle-green > img {
-      width: 30%;
-      padding-top: 31%;
-      padding-left: 44%;
-    }
-    #cone-blue > img {
-      padding-top: 198%;
-      padding-left: 25%;
-    }
-    #pink-cone {
-      padding-left: 27%;
-      padding-top: 42%;
-    }
-    #button-green > img {
-      padding-left: 54%;
-      padding-top: 69%;
-    }
-    #noodle-pink > img {
-      display: inherit;
-      width: 39%;
-      padding-left: 70%;
-      padding-top: 20%;
-    }
-    #torus-blue > img {
-      padding-left: 68%;
-      padding-top: 62%;
     }
 }
 
@@ -667,19 +222,6 @@ a {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-    #torus-green > img {
-      padding-top: 81%;
-    }
-    #button-green > img {
-      padding-top: 101%;
-    }
-    #noodle-pink > img {
-      padding-top: 39%;
-    }
-    #torus-blue > img {
-      padding-left: 51%;
-      padding-top: 94%;
-    }
     #landscape-words {
       display: inherit;
       padding-left: 12%;
@@ -692,37 +234,8 @@ a {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
-    #torus-green > img {
-      padding-top: 62%;
-      width: 51%;
-      padding-left: 10%;
-    }
-    #cone-blue > img {
-      padding-top: 236%;
-      padding-left: 20%;
-      width: 32%;
-    }
-    #pink-cone {
-      padding-top: 62%;
-      padding-left: 35%;
-      width: 31% !important;
-    }
-    #torus-blue > img {
-      padding-top: 83%;
-      padding-left: 49%;
-    }
-    #noodle-pink > img {
-      padding-top: 30%;
-      display: inherit;
-      padding-left: 51%;
-    }
-    #button-green > img {
-      padding-top: 79%;
-      width: 30%;
-      padding-left: 45%;
-    }
     #landscape-words {
-      padding-top: 34%;
+      margin-top: 34%;
       width: 88%;
       padding-left: 12%;
     }
@@ -730,31 +243,6 @@ a {
       grid-column: 4 / span 4;
       grid-row-start: 2;
     }   
-    #noodle-blue > img {
-      width: 40%;
-      padding-left: 33%;
-      padding-top: 30%;
-    }
-    #pills > img {
-      width: 183%;
-      padding-top: 3%;
-      padding-left: 21%;
-      transform: rotate(6deg);
-    }
-    #button-pink > img {
-      width: 40%;
-      padding-left: 30%;
-      padding-top: 20%;
-    }
-    #button-blue > img {
-      padding-left: 60%;
-      padding-top: 34%;
-    }
-    #noodle-green > img {
-      width: 30%;
-      padding-left: 35%;
-      padding-top: 50%;
-    }
 }
 
 /* iPhone 6,7,8 Plus landscape -----------------------------------*/
@@ -766,34 +254,7 @@ a {
     and (-webkit-device-pixel-ratio : 3){ 
 
     #landscape-words {
-      padding-top: 32%;
-    }
-    #button-pink > img {
-      width: 32%;
-    }
-    #torus-green > img {
-      padding-top: 59%;
-    }
-    #cone-blue > img {
-      padding-top: 236%;
-      padding-left: 20%;
-    }
-    #cone-pink > img {
-      padding-top: 80%;
-      padding-left: 35%;
-    }
-    #torus-blue > img {
-      padding-top: 80%;
-      padding-left: 54%;
-    }
-    #noodle-pink > img {
-      padding-top: 30%;
-    }
-    #button-green > img {
-      padding-top: 91%;
-    }
-    #pills > img {
-      width: 189%;
+      margin-top: 32%;
     }
 }
 
@@ -804,60 +265,9 @@ a {
   and (-webkit-device-pixel-ratio : 3) 
   and (orientation : landscape) { 
     #landscape-words {
-      padding-top: 23%;
+      margin-top: 23%;
       width: 92%;
       padding-left: 8%;
-    }
-    #button-blue > img {
-      width: 15%;
-      padding-left: 51%;
-      padding-top: 24%;
-    }
-    #noodle-blue > img {
-      padding-left: 29%;
-      padding-top: 20%;
-    }
-    #pills > img {
-      width: 162%;
-      padding-left: 17%;
-      padding-top: 6%;
-      transform: rotate(6deg);
-    }  
-    #torus-green > img {
-      padding-top: 42%;
-      padding-left: 12%;
-    }
-    #button-pink > img {
-      width: 35%;
-      padding-top: 10%;
-      padding-left: 41%;
-    }
-    #noodle-green > img {
-      width: 30%;
-      padding-top: 31%;
-      padding-left: 44%;
-    }
-    #cone-blue > img {
-      padding-top: 204%;
-      padding-left: 25%;
-    }
-    #pink-cone {
-      padding-left: 50%;
-      padding-top: 48%;
-    }
-    #button-green > img {
-      padding-left: 57%;
-      padding-top: 62%;
-    }
-    #noodle-pink > img {
-      display: inherit;
-      width: 39%;
-      padding-left: 69%;
-      padding-top: 18%;
-    }
-    #torus-blue > img {
-      padding-top: 63%;
-      padding-left: 69%;
     }
 }
 
@@ -871,7 +281,8 @@ a {
     .header {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 6% 1fr 1fr;
-      background: url(img/grid.svg);
+      background-image: linear-gradient(rgba(50, 49, 58, .7) .2em, transparent .1em), linear-gradient(90deg, rgba(50, 49, 58, .7) .2em, transparent .1em);
+      background-size: 2.5em 2.5em;
     }
 
     #nav-column {
@@ -908,81 +319,6 @@ a {
     #words {
       display: none;
     }
-    
-    #noodle-blue > img {
-      width: 40%;
-    }
-    
-    #pills > img {
-      transform: rotate(6deg);
-    }
-    
-    #pills > img:hover {
-      animation: shake 1s ease-in-out infinite;
-    }
-
-    @keyframes shake {
-      0% {transform: rotate(0deg);} 
-      50% {transform: rotate(10deg);}
-      100% {transform: rotate(0deg);}  
-    } 
-        
-    #button-pink {
-      grid-column-start: 7;
-    }
-    #button-green {
-      grid-column-start: 7;
-      grid-row-start: 3;
-    }
-    #button-green > img {
-      width: 25%;
-    }
-    #button-blue {
-      grid-row-start: 2;
-      grid-column-start: 3;
-    }
-    #cone-pink {
-      grid-row-start: 3;
-      grid-column-start: 3;
-    }
-    #pink-cone {
-      width: 31%;
-    }
-    #torus-green {
-      grid-row-start: 3;
-      grid-column-start: 1;
-    }
-    #torus-green > img {
-      width: 51%;
-    }
-    #cone-blue {
-      grid-row: 2 / span 2;
-      grid-column-start: 2;
-    }
-    #cone-blue > img {
-      width: 32%;
-    }
-    #noodle-green {
-      grid-row-start: 2;
-      grid-column-start: 6;
-    }
-    #noodle-green > img {
-      width: 30%;
-    }
-    #torus-blue {
-      grid-row-start: 3;
-      grid-column-start: 5;
-    }
-    #torus-blue > img {
-      width: 24%;
-    }
-    #noodle-pink {
-      grid-row-start: 3;
-      grid-column-start: 6;
-    }
-    #noodle-pink > img {
-      display: inherit;
-    }
 }
 
 /* Laptop -----------------------------------*/
@@ -991,54 +327,7 @@ a {
   and (max-device-width: 1600px) 
   and (orientation: landscape) { 
     #landscape-words {
-      padding-top: 28%;
+      margin-top: 28%;
       width: 92%;
-      padding-left: 8%;
-    }
-    #noodle-blue > img {
-      padding-left: 30%;
-      padding-top: 30%;
-    }
-    #pills > img {
-      padding-left: 30%;
-      padding-top: 10%;
-      width: 180%;
-    }
-    #torus-green > img {
-      padding-top: 75%;
-      padding-left: 20%;
-    }
-    #cone-blue > img {
-      padding-top: 238%;
-      padding-left: 27%;
-    }
-    #pink-cone {
-      padding-left: 39%;
-      padding-top: 74%;
-    }
-    #button-green > img {
-      padding-top: 100%;
-      padding-left: 40%;
-    }
-    #torus-blue > img {
-      padding-left: 33%;
-      padding-top: 85%;
-    }
-    #noodle-pink > img {
-      display: inherit;
-      padding-top: 35%;
-      padding-left: 25%;
-    }
-    #button-blue > img {
-      padding-top: 25%;
-      padding-left: 55%;
-    }
-    #button-pink > img {
-      padding-top: 20%;
-      padding-left: 30%;
-    }
-    #noodle-green > img {
-      padding-top: 40%;
-      padding-top: 50%;
     }
 }
