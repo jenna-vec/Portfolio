@@ -1,10 +1,16 @@
-.hamburger {
-    width: 12%;
-    height: 90%;
+.nav-container{
     position: relative;
-    top: 22.7%;
-    padding-top: 8.4%;
-    padding-left: 86%;
+    float: right;
+    width: 12%;
+    height: 100%;
+    top: 32%;
+    vertical-align: middle;
+}
+
+.hamburger {
+    width: 58%;
+    height: 100%;
+    position: relative;
     vertical-align: middle;
     z-index: 5;
     -webkit-transform: rotate(0deg);
@@ -21,8 +27,8 @@
 .hamburger span {
     display: block;
     position: absolute;
-    height: 5%;
-    width: 10%;
+    height: 6%;
+    width: 100%;
     background: #e2dfea;
     border-radius: 9px;
     opacity: 1;
@@ -49,9 +55,9 @@
 }
   
 .hamburger.open span:nth-child(1) {
-    top: 15%;
+    top: 25%;
     width: 0%;
-    left: 90%;
+    left: 20%;
 }
   
 .hamburger.open span:nth-child(2) {
@@ -69,7 +75,7 @@
 }
   
 .hamburger.open span:nth-child(4) {
-    top: 15%;
+    top: 25%;
     width: 0%;
-    left: 90%;
+    left: 20%;
 } 
