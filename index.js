@@ -3,6 +3,8 @@ window.addEventListener("load", function(){
     $("#words, #landscape-words").css("opacity", "1")
 });
 
+var languages = ["HTML 5", "CSS", "Javascript", "jQuery", "SVG", "Node.js", "Express.js", "npm", "mySQL", "Firebase", "Git"]
+
 const body = document.body;
 const triggerMenu = document.querySelector("#nav-column");
 const nav = document.querySelector("#nav");
@@ -43,4 +45,12 @@ $(document).ready(function(){
   $("#pink-button").hover(function(){
     $(this).toggleClass("big");
   })
+  const array1 = ['a', 'b', 'c'];
+
+  languages.forEach((language) => {
+    p = $("<p>");
+    p.text(language)
+    $("#full-stack").append(p)
+  })
 });
+
