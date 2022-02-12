@@ -1,9 +1,9 @@
-# Web Developer Portfolio
+### [Web Development Portfolio](https://www.jennalefort.com/)
+#### Hello, I am Jenna LeFort
 
-**Currently Under Construction :warning:**  
+**Under Construction**   
+Thank you for visiting, please check back soon.  
+Last Updated: 2/12/2022
 
- This website was designed by me using Adobe XD in a modernized Memphis style.  
- Developed with CSS animations and vanilla javascript.  
-
- Thank you for visiting   
- [Jenna's Portfolio](https://www.jennalefort.com/)
+**Deployment**   
+Github
