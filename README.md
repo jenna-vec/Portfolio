@@ -7,3 +7,5 @@ Last Updated: 2/12/2022
 
 **Deployment**   
 Github
+
+**[Go to my Github](https://github.com/jenna-vec)**
