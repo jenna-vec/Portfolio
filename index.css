@@ -52,6 +52,17 @@ h3 {
 }
 
 
+body::-webkit-scrollbar {
+    width: 12px;
+}  
+body::-webkit-scrollbar-track {
+    background: rgb(173, 163, 147);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 3px solid rgb(173, 163, 147);
+}
 
 .navigation {
     height: 4em;
