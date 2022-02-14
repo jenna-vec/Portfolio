@@ -302,7 +302,7 @@ h1:active {
     flex-direction: column;
     align-items: center;
     left: 4vw;
-    top: 87vh;
+    bottom: 0;
     grid-gap: 1vh;
 }
 
