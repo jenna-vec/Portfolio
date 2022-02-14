@@ -20,7 +20,7 @@ a {
     font-weight: 500;
 }
 
-a:visited {
+a:visited, a:link, a:hover, a:active {
     color: black;
 }
 
