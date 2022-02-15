@@ -3,10 +3,18 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="index.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="img/favicon/favicon.ico" />
+    <meta
+      name="Jenna LeFort"
+      content="Jenna LeFort Full Stack Web Developer Portfolio"/>
+    <link rel="apple-touch-icon" href="img/favicon/favicon_192.png" />
+    <link rel="manifest" href="manifest.json" />
 
     <title>Jenna LeFort | Full Stack Web Development</title>
   </head>
@@ -21,8 +29,8 @@
       </label>
       <div class="nav-long">
         <a href="#skills">ABOUT</a>
-        <a>WORK</a>
-        <a>CONTACT</a>
+        <a href="#work">WORK</a>
+        <a href="#contact">CONTACT</a>
       </div>
     </div>
 
@@ -30,8 +38,8 @@
       <div class="nav-line"></div>
       <div class="nav-box">
         <a href="#skills">ABOUT</a>
-        <a>WORK</a>
-        <a>CONTACT</a>
+        <a href="#skills">WORK</a>
+        <a href="#contact">CONTACT</a>
       </div>
     </div>
 
@@ -157,7 +165,37 @@
       </div>
     </div>
 
-    <div id="nothing"></div>
+    <div class="galaxy-container">
+      <img class="galaxy2" src="img/galaxy2.png">
+    </div>
+
+    <div class="work">
+      <h3 id="work">WORK</h3>
+      <div class="work-flex">
+        <div id="column" name="0">
+          <img id="modal" name="0" class="project-logo pointer" src="img/projects/egg-bw.png">
+          <h4>E-Commerce</h4>
+        </div>
+        <div id="column" name="1">
+          <img id="modal" name="1" class="book project-logo pointer" src="img/projects/recipe-books.png">
+          <h4>User Data Storage</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-container"></div>
+
+    <div class="contact">
+      <h3 id="contact">CONTACT</h3>
+      <form action="mail.php" method="POST">
+        <div id="form">
+            <input type="text" name="name" placeholder="NAME" required>
+            <input type="email" name="email" placeholder="EMAIL" required>
+            <textarea id="Message" name="message" placeholder="MESSAGE" rows="6" required></textarea>
+            <button type="submit">SEND</button>
+        </div>
+      </form>
+    </div>
 
     <div class="connect">
       <a target="_blank" href="https://github.com/jenna-vec"><img src="img/logo/github.png"></a>
