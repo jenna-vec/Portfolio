@@ -1,0 +1,20 @@
+{
+  "name": "Jenna LeFort",
+  "icons": [
+    {
+      "src": "img/favicon/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "img/favicon/favicon_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/favicon/favicon_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
