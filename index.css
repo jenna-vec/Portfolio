@@ -51,6 +51,45 @@ h3 {
     margin-bottom: 0.2em;
 }
 
+textarea {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    padding: 0.4em;
+}
+
+input, textarea {
+    background-color: #ADA393;
+    border: 2px solid black;
+    color: black;
+    font-size: medium;
+    padding: 0.4em;
+    font-weight: 500;
+}
+
+::placeholder {
+    color: black;
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
+    background-color: #d6cdbd;
+}
+
+button {
+    width: fit-content;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: #ADA393;
+    padding: 0.5em 1em;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.smaller {
+    font-size: smaller;
+}
+
 body::-webkit-scrollbar {
     width: 12px;
 }  
@@ -63,6 +102,9 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid rgb(173, 163, 147);
 }
 
+.pointer {
+    cursor: pointer;
+}
 
 .navigation {
     height: 4em;
@@ -292,21 +334,123 @@ h1:active, h1:hover {
         transform: matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
     }
     50% {
-        transform: matrix3d(0.77,-0.07,0.64,0,0.07,0.693,0.10,0,-0.64,-0.1,0.7623,0,0,0,0,1);
+        transform: matrix3d(1,0,0.00,.0012,0.00,0.9,0.00,0,0,0,1,0,0,0,0,1);
     }
     100% {
         transform: matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
     }
 }
 
-
-#nothing {
-    height: 10em;
+.galaxy-container {
+    width: 29vw;
+    position: absolute;
+    overflow: hidden;
+    margin: 15em 0 0 71vw;
 }
 
+.galaxy2 {
+    height: 20vh;
+}
 
+.galaxy2:active, .galaxy2:hover {
+    animation: flip 3s infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: center center 0px; 
+}
 
-/* Connect Socials */
+@keyframes flip {
+    0% {
+        transform: matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
+    }
+    50% {
+        transform: matrix3d(1,0,0.00,-.004,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
+    }
+    100% {
+        transform: matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
+    }
+}
+
+.work {
+    margin: 5em auto 4em auto;
+    max-width: 79vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+.work-flex {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2em;
+    margin: 2em 0;
+}
+
+#column {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0.5em;
+    align-items: center;
+}
+
+.project-logo {
+    width: 15vw;
+}
+
+.modal {
+    height: fit-content;
+    width: 74vw;
+    background-color: #ADA393;
+    border: 2px solid black;
+    margin: -66vh auto;
+    text-align: center;
+    padding: 3vh 6vw;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0px 5px 10px -1px rgb(0 0 0 / 68%);
+}
+
+#close {
+    font-weight: bold;
+    float: right;
+}
+
+.modal-text {
+    width: 69vw;
+    margin: 0 auto;
+}
+
+.modal-flex {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1em;
+    justify-content: center;
+    margin: 3em auto 1em auto;
+}
+
+#modal-img {
+    width: 46vw;
+}
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    margin: 2em auto 4em auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1em;
+    width: 77vw;
+    margin-top: 1em;
+}
+
 .connect {
     position: fixed;
     display: flex;
@@ -360,6 +504,19 @@ h1:active, h1:hover {
         flex-direction: row;
         grid-gap: 6em;
     }
+    .project-logo {
+        width: 7vw;
+    }
+    .modal-flex {
+        flex-direction: row;
+    }
+    #modal-img {
+        width: 32vw;
+    }
+    .galaxy-container {
+        width: 20vw;
+        margin: 18em 0 0 77vw;
+    }
 }
 
 @media screen 
@@ -388,6 +545,25 @@ h1:active, h1:hover {
     }
     .about-flex {
         flex-direction: row;
+    }
+    .work-flex {
+        grid-gap: 4em;
+        margin: 3em 0;
+    }
+    .project-logo {
+        width: 7vw;
+    }
+    .work {
+        margin: 9em auto 4em auto;
+    }
+    .modal {
+        margin: -63vh auto;
+    }
+    #form {
+        width: 45vw;
+    }
+    .contact {
+        margin: 1em auto 2em auto;
     }
   }
 
@@ -433,11 +609,55 @@ h1:active, h1:hover {
         animation-timing-function: ease-in-out;
         transform-origin: center center 0px; 
     }
+    .galaxy-container {
+        margin: 23em 0 0 77vw;
+    }
+    .galaxy2:hover {
+        animation: flip 3s infinite;
+    }
+    .project-logo {
+        width: 5vw;
+    }
+    .work {
+        margin: 9em auto 4em auto;
+    }
+    .work-flex {
+        grid-gap: 4em;
+    }
+    .modal {
+        height: fit-content;
+        width: fit-content;
+        margin: -32em auto;
+        padding: 2em;
+    }
+    .modal-text {
+        width: 50vw;
+    }
+
+    .modal-flex {
+        flex-direction: row;
+        grid-gap: 2em;
+    }
+    #modal-img {
+        width: 20vw;
+    }
+    #form {
+        width: 29vw;
+    }
+    .contact {
+        margin: 5em auto 4em auto;
+    }
 }
 
 @media screen and (min-width: 1920px) and (orientation: landscape) {
     .galaxy {
         margin-left: 59em;
         margin-top: -7em;
+    }
+    .modal-text {
+        width: 33vw;
+    }
+    #form {
+        width: 23vw;
     }
 }
