@@ -1,11 +1,12 @@
 ### [Web Development Portfolio](https://www.jennalefort.com/)
-#### Hello, I am Jenna LeFort
 
-**Under Construction**   
-Thank you for visiting, please check back soon.  
-Last Updated: 2/12/2022
+**Hello, I am Jenna LeFort**   
+This single-page portfolio was built using javascript and jquery.   
+Thank you for visiting.
 
 **Deployment**   
 Github
 
-**[Go to my Github](https://github.com/jenna-vec)**
+**Styling**   
+Custom CSS  
+PNG files created with Adobe Photoshop
