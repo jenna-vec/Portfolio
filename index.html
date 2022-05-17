@@ -226,13 +226,6 @@
             case "scrollIntoView":
               iframe.scrollIntoView();
               break;
-            case "setHeight":
-              iframe.style.height = "fit-content";
-              break;
-            case "collapseErrorPage":
-              if (iframe.clientHeight > window.innerHeight) {
-                iframe.style.height = "fit-content";
-              }
               break;
             case "reloadPage":
               window.location.reload();
@@ -281,7 +274,7 @@
         } else if (window.attachEvent) {
           window.attachEvent("onmessage", handleIFrameMessage);
         }
-        </script>
+       </script>
     </div>
 
     <div class="connect">
