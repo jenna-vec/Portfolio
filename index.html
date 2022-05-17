@@ -187,20 +187,22 @@
 
     <div class="contact">
       <h3 id="contact">CONTACT</h3>
-      
-    <iframe
-      id="JotFormIFrame-221365645206049"
-      title="Email"
-      onload="window.parent.scrollTo(0,0)"
-      allowtransparency="true"
-      src="https://form.jotform.com/221365645206049"
-      frameborder="0"
-      style="
-      min-width: 100%;
-      height:490;
-      border:none;"
-    >
-    </iframe>
+      <iframe
+        id="JotFormIFrame-221365645206049"
+        title="Email"
+        onload="window.parent.scrollTo(0,0)"
+        allowtransparency="true"
+        allowfullscreen="true"
+        allow="geolocation; microphone; camera"
+        src="https://form.jotform.com/221365645206049"
+        frameborder="0"
+        style="
+        min-width: 100%;
+        height:539px;
+        border:none;"
+        scrolling="no"
+      >
+      </iframe>
     <script type="text/javascript">
       var ifr = document.getElementById("JotFormIFrame-221365645206049");
       if (ifr) {
@@ -224,6 +226,14 @@
         switch (args[0]) {
           case "scrollIntoView":
             iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
             break;
           case "reloadPage":
             window.location.reload();
