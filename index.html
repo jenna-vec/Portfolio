@@ -198,7 +198,6 @@
         frameborder="0"
         style="
         min-width: 100%;
-        height:539px;
         border:none;"
         scrolling="no"
       >
@@ -228,11 +227,11 @@
               iframe.scrollIntoView();
               break;
             case "setHeight":
-              iframe.style.height = args[1] + "px";
+              iframe.style.height = "fit-content";
               break;
             case "collapseErrorPage":
               if (iframe.clientHeight > window.innerHeight) {
-                iframe.style.height = window.innerHeight + "px";
+                iframe.style.height = "fit-content";
               }
               break;
             case "reloadPage":
